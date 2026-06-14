@@ -370,8 +370,9 @@
     .section-tinted::before{
       content:'';position:absolute;inset:0;
       background:linear-gradient(180deg,transparent 0%,var(--bg-2) 8%,var(--bg-2) 92%,transparent 100%);
-      pointer-events:none;
+      pointer-events:none;z-index:0;
     }
+    .section-tinted .container{position:relative;z-index:1;}
 
     .section-label{
       font-size:0.72rem;font-weight:700;letter-spacing:0.14em;
